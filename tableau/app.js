@@ -1,3 +1,4 @@
+
 let monTableau = new Array ('un' , 'deux' , 'trois');
 let monTableau =  Array ('un' , 'deux' , 'trois');
 let monTableau = [ 'un' , 'deux ' , ' trois'];
@@ -5,6 +6,11 @@ let monTableau = [ 'un' , 'deux ' , ' trois'];
 //unshift permet d'ajouter un élément au debut de mon tableau
 monTableau.push('cinq');
 monTableau.unshift('zero');
+
+//pop permet de supprimer un élément à la fin de mon tableau
+monTableau.pop();
+//shift permet de supprimer un élément au début de mon tableau
+monTableau.shift();
 
 console.log( monTableau );
 
@@ -29,3 +35,7 @@ let monTableauAssociatif = {
 'poste' : 'PDG de Facebook'
 
 };
+
+//pour supprimer  dabs un tableau associatif il faut utiliser delete puis le nom du tableau puis le nom de la valeur que l'on veut supprimer 
+
+delete(monTableauAssociatif.poste);
